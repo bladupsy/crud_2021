@@ -14,10 +14,18 @@
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
+        <label for="cuit">CUIT</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="ct" name="number" placeholder="Escriba su CUIT..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
         <label for="fname" class="rounded">Nombre</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Escriba su nombre..">
       </div>
     </div>
     <div class="row">
@@ -25,27 +33,23 @@
         <label for="lname">Apellido</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="Escriba su apellido..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="country">Pais</label>
+        <label for="celular">Teléfono</label>
       </div>
       <div class="col-75">
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
+        <input type="text" id="celular" name="phone" placeholder="Escriba su número de teléfono..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="subject">Descripción</label>
+        <label for="subject">Correo Electrónico</label>
       </div>
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="text" id="email" name="email" placeholder="Escriba su correo electrónico..">
       </div>
     </div>
     <div class="row">
