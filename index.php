@@ -9,12 +9,12 @@
 
 <div class="container">
 
-    <div><h2>Responsive Form</h2></div>
+    <div><h2>Registro</h2></div>
 
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
-        <label for="fname" class="rounded">First Name</label>
+        <label for="fname" class="rounded">Nombre</label>
       </div>
       <div class="col-75">
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -22,7 +22,7 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="lname">Last Name</label>
+        <label for="lname">Apellido</label>
       </div>
       <div class="col-75">
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
@@ -30,7 +30,7 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="country">Country</label>
+        <label for="country">Pais</label>
       </div>
       <div class="col-75">
         <select id="country" name="country">
@@ -42,7 +42,7 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="subject">Subject</label>
+        <label for="subject">Descripción</label>
       </div>
       <div class="col-75">
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
