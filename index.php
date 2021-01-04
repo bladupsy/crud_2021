@@ -1,5 +1,6 @@
 
 <?php include('includes/header_date.php'); ?>
+<?php include("db.php"); ?>
 
 
 
@@ -8,16 +9,17 @@
 
 
 <div class="container">
+<div class="center-container">
 
     <div><h2>Registro</h2></div>
 
-  <form action="/action_page.php">
+  <form action="save_task.php" method="POST">
     <div class="row">
       <div class="col-25">
         <label for="cuit">CUIT</label>
       </div>
       <div class="col-75">
-        <input type="text" id="ct" name="number" placeholder="Escriba su CUIT..">
+        <input type="text"  name="cuit" placeholder="Escriba su CUIT..">
       </div>
     </div>
     <div class="row">
@@ -25,7 +27,7 @@
         <label for="fname" class="rounded">Nombre</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Escriba su nombre..">
+        <input type="text" id="fname" name="nombre" placeholder="Escriba su nombre..">
       </div>
     </div>
     <div class="row">
@@ -33,7 +35,7 @@
         <label for="lname">Apellido</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Escriba su apellido..">
+        <input type="text" id="lname" name="apellido" placeholder="Escriba su apellido..">
       </div>
     </div>
     <div class="row">
@@ -41,7 +43,7 @@
         <label for="celular">Teléfono</label>
       </div>
       <div class="col-75">
-        <input type="text" id="celular" name="phone" placeholder="Escriba su número de teléfono..">
+        <input type="text" id="celular" name="telefono" placeholder="Escriba su número de teléfono..">
       </div>
     </div>
     <div class="row">
@@ -53,10 +55,12 @@
       </div>
     </div>
     <div class="row">
-      <input type="submit" value="Aceptar">
+      <input type="submit" value="Aceptar" name="save_task">
       <input type="cancel" value="Cancelar">
     </div>
   </form>
+
+  </div>
 </div>
 
 </body>

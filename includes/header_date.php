@@ -5,6 +5,7 @@
 <style>
 * {
   box-sizing: border-box;
+  font-family: system-ui;
 }
 .row {
     margin-top: 12px;
@@ -60,6 +61,14 @@ input[type=cancel]:hover {
   border-radius: 15px;
   background-color: #f2f2f2;
   padding: 20px;
+  max-width: 720px;
+  margin-top: 24px;
+  margin: auto;
+}
+
+.center-container {
+    margin: auto;
+    max-width: 720px;
 }
 
 .col-25 {
