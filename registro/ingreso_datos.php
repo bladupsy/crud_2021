@@ -112,7 +112,7 @@ input[type=cancel]:hover {
     <div class="center-container">
           <div><h2>Registro</h2></div>
 
-            <form action="save_task.php" method="POST">
+            <form action="../save_task.php" method="POST">
                 <div class="row">
                     <div class="col-25">
                         <label for="cuit">CUIT</label>
@@ -156,7 +156,7 @@ input[type=cancel]:hover {
                   </div>
                   <div class="row">
                           <input type="submit" value="Aceptar" name="save_task">
-                          <input type="cancel" value="Cancelar">
+                          <input type="cancel" value="Cancelar" onclick="location.href='../index.php'">
                   </div>
             </form>
 

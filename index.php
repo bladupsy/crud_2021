@@ -1,7 +1,7 @@
 
 <?php include('includes/header_date.php'); ?>
 <?php include("db.php"); ?>
-
+/* EL CSS DEL INDEX ESTA EN header_date */
     <div><h2>Registro de personas</h2></div>
       
     <div class= "col-75">
