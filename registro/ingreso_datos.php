@@ -41,7 +41,7 @@ input[type=submit]:hover {
 }
 
 input[type=cancel] {
-  background-color: #FF8B72;;
+  background-color: #FF7456;;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -54,7 +54,7 @@ input[type=cancel] {
 }
 
 input[type=cancel]:hover {
-  background-color: #FF8B72;;
+  background-color: #FF7456;;
 }
 
 .container {
