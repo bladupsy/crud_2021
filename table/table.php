@@ -14,6 +14,7 @@
 
     <div>
         <table id="customers">
+      
                 <tr>
                     <th>CUIT</th>
                     <th>Nombre</th>
@@ -25,28 +26,39 @@
                 
                 </tr>
                 <tbody>
+                
                 <?php
-                 $query = "SELECT * FROM task";
-                $result_task =  mysqli_query($conn, $query );
+        
+                $query = "SELECT * FROM task";
+                $result_tasks =  mysqli_query($conn, $query );
                  
-                while($row = mysqli_fetch_array($result_task)) { ?>
+                while($row = mysqli_fetch_array($result_tasks)) { 
+                    echo "<tr></tr>" . 
+                    echo "<tr><td>" . 
+                    $row["cuit"] . "</td>";
+                echo "<td>" . 
+                    $row["nombre"] . "</td>";
+                echo "<td>" . 
+                    $row["apellido"] . "</td>";
+                echo "<td>" . 
+                    $row["telefono"] . "</td>";
+            
+                echo "<td>" . 
+                    $row["email"]. "</td>";
+                        
+                            <a href="edit.php?cuit=<?php echo $row['cuit']?> ">
+                           Edit
+                            </a>
 
-                    <tr>
-                        <td><?php echo $row['cuit'] ?> </td>
-                        <td><?php echo $row['nombre'] ?> </td>
-                        <td><?php echo $row['apellido'] ?> </td>
-                        <td><?php echo $row['telefono'] ?> </td>
-                        <td><?php echo $row['email'] ?> </td>
-                        <td>
-                            <input type="image" src="recursos/edit.png" href="edit.php?cuit=<?php echo $row['cuit']?> ">
-                            
-                            <input type="image" src="recursos/delete.png" href="delete.php?cuit=<?php echo $row['cuit']?> ">
+                            <a href="delete_task.php?cuit=<?php echo $row['cuit']?> ">
+                                Eliminar
+                            </a>
                             
                         </td>
                     </tr>
 
                     
-                <?php } ?>
+                 } ?>
             
                 </tbody>
         

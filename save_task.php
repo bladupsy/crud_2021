@@ -1,3 +1,5 @@
+
+<!--Conexión a la base de datos para guardar los registros -->
 <?php 
 
 include("db.php");
@@ -16,10 +18,6 @@ if (isset($_POST['save_task'])) {
         die("Fallo");
 
     }
-/* Mensaje de que se ha enviado la información a mysql */ 
-    $_SESSION['message'] = 'Holaa';
-    $_SESSION['message_type'] = 'green';
-   header("Location: index.php");
 
 
 }

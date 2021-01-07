@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+ 
 $conn = mysqli_connect(
   'localhost',
   'root',
@@ -9,10 +9,9 @@ $conn = mysqli_connect(
   'crud_2021'
 );
 
-if (isset($conn)) {
-    
 
-}
+
+
 
 
 
